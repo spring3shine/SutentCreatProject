@@ -1,3 +1,8 @@
+/**
+ *	Java 与　Mysql 的 date格式不同，需要利用String，进行转换传递
+ *　本类将String 转化为 java.sql.date/time
+ */
+
 package test_4;
 
 import java.sql.Time;
@@ -6,7 +11,8 @@ import java.text.SimpleDateFormat;
 public class StrToMysqlDate {
 	/**
 	 * String -> java.sql.date    输入 2016-11-11
-	 * @param 返回java.sql.Date格式的
+	 * @param  strDate [in] [String] 字符串日期
+	 * @return 返回java.sql.Date格式的
 	 * */
 	public static java.sql.Date strToSqlDate(String strDate) {
 		String str = strDate;
@@ -23,7 +29,8 @@ public class StrToMysqlDate {
 
 	/**
 	 * String -> java.sql.time   输入 12:30:59
-	 * @param 返回java.sql.Time格式的
+	 * @param  strTime [in] [String] 字符串时刻
+	 * @return 返回java.sql.Time格式的
 	 * */
 	public static java.sql.Time strToSqlTime(String strDate) {
 		String str = strDate;

@@ -1,5 +1,5 @@
 /**
- * 	Message 是一个容器类, 是用到的信息集合  
+ * 	Message 是一个容器类, 是所需信息的集合  
  * 	@author spring3shine
  * 	@Time 	2018/04/13
  */
@@ -15,7 +15,7 @@ public class Message {
 	private Date day;//日期，DATE_FORMAT(YYYY-MM-DD)
 	private Time clock;//时刻，DATE_FORMAT(HH:MM:SS)
 	private int count;//当前浴室人数
-	private String position;//浴室位置
+	private String position;//浴室位置，也是浴室名
 	
 	public Message() {
 	}

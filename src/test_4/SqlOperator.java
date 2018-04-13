@@ -1,3 +1,7 @@
+/**
+ * SqlOperator ,基本的数据库查询和更新接口，主要是格式转换
+ */
+
 package test_4;
 
 import java.sql.Connection;
@@ -25,6 +29,12 @@ public class SqlOperator {
 		return preparedStatement.executeUpdate();
 	}
 	
+	/**
+	 * 将mysql查询结果转换为Json格式方便传递
+	 * @param rs [in] [ResultSet]  是mysql查询的结果数据
+	 * @return StringBuffer类，是Json格式数据
+	 * @throws SQLException
+	 */
 	public static StringBuffer toJson(ResultSet rs) throws SQLException {
 		StringBuffer ret=new StringBuffer();
 		ResultSetMetaData meta=rs.getMetaData();
