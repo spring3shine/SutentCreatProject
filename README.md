@@ -20,9 +20,9 @@
 业务负责对数据库进行操作，获取数据后以json形式输出：
 
 
-1. 查询最新信息　     http://localhost:8080/test4/Query?userName=root&userPass=123456 
+1. 查询所有信息　     http://localhost:8080/test4/Query?userName=root&userPass=123456 
 2. 按日期查询单日信   http://localhost:8080/test4/QueryDay?userName=root&userPass=123456&searchDay=2018-04-06
-3. 查询所有信息      http://localhost:8080/test4/QueryLatest?userName=root&userPass=123456 
+3. 查询最新信息      http://localhost:8080/test4/QueryLatest?userName=root&userPass=123456 
 4. 按id删除单条信息  http://localhost:8080/test4/DeleteId?userName=root&userPass=123456&deleteId=6
 5. 按日期删除单日信息 http://localhost:8080/test4/DeleteDay?userName=root&userPass=123456&deleteDay=2018-4-6
 6. 插入单条信息      http://localhost:8080/test4/Listen?userName=root&userPass=123456&Day=2018-4-6&Time=18:08:00&Count=4&Position=NorthGirl
